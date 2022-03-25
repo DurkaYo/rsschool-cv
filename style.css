@@ -1,0 +1,29 @@
+:root {
+    --spacer: 8px;
+    --primary-color: #2d2d2d;
+    --gray: #EBEDF0;
+    --gray-border: #D6D8DA;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    line-height: 1.4;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    background-color: var(--gray);
+}
+
+main {
+    padding: 0 0 calc(var(--spacer) * 8) 0;
+    margin: 0 auto;
+    max-width: 740px;
+}
+
+section + section {
+    margin-top: calc(var(--spacer) * 4);
+    border-top: 1px solid var(--gray-border);
+}
