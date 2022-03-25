@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV#2. HTML, CSS & Git Basics</title>
+</head>
+<body>
+    <main>
+        <h1>Aleksandr Egorov</h1>
+
+        <section>
+            <h2>Contact information</h2>
+            <ul>
+                <li>Phone/WhatsApp: <a href="tel:+79096546582"><strong>+7 (909) 654-65-82</strong></a></li>
+                <li>Telegram: <a href="https://t.me/AlexEgorovV"><strong>AlexEgorovV</strong></a></li>
+                <li>E-mail: <a href="mailto:ae.durkayo@gmail.com"><strong>ae.durkayo@gmail.com</strong></a></li>
+                <li>Discord: <strong>Александр  Егоров#4525</strong></li>
+                <li>Rs-school Discord nickname: <strong>Aleksandr Egorov (@DurkaYo)</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>A little bit about yourself</h2>
+            <p>I've been working as an HTML/UI developer for over 10 years now.</p>
+            <p>In my work, I pay attention to small things and do not have the habit of leaving unresolved issues.</p>
+            <p>I studied what is called - in the field, but I would like to get a full education in JS, especially since this is my second attempt to take the course</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, PUG, TWIG <em>(Proficient)</em></li>
+                <li>CSS, SASS, SCSS, Stylus <em>(Proficient)</em></li>
+                <li>JS, TS <em>(Advanced Beginner)</em></li>
+                <li>React, Angular <em>(Advanced Beginner)</em></li>
+            </ul> 
+        </section>
+
+        <section>
+            <h2>Code example</h2>
+            <figure>
+                <blockquote cite="">
+                    <p>In this example you have to validate if a user input string is alphanumeric. The given string is not nil/null/NULL/None, so you don't have to check that. The string has the following conditions to be alphanumeric:</p>
+                    <ul>
+                        <li>At least one character ("" is not valid)</li>
+                        <li>Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9</li>
+                        <li>No whitespaces / underscore</li>
+                    </ul>
+                </blockquote>
+                <figcaption>Example taken from codewars.com <em>nickname: (DurkaYo)</em>. <a href="https://www.codewars.com/kata/526dbd6c8c0eb53254000110">Task</a></figcaption>
+            </figure>
+            
+            <h2>Solution</h2>
+            <code>
+                const alphanumeric = string => {
+                    if (!string) {
+                      return false;
+                    } else {
+                      return string.replace(/[a-zA-Z0-9]+/g, '').length ? false : true;
+                    }
+                  }
+            </code>
+        </section>
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian — Native</li>
+                <li>English — А2</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
